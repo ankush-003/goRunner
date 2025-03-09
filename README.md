@@ -1,4 +1,5 @@
-# Docker-from-scratch 🐳
+# goRunner 🐳
+a linux container runtime written in golang
 
 ## How to create a child process ?
 
@@ -34,3 +35,13 @@ Steps Involved in Execution:
   - UTS (uts includes hostname and NIS domain name)
   - User (user)
   - cgroup (control group means resource limitation)
+- The `clone()` system call is used to create a new process in a new namespace. [Read more](https://medium.com/@teddyking/namespaces-in-go-basics-e3f0fc1ff69a)
+
+# References 🔗
+
+- [bocker- docker in 100 lines of bash](https://medium.com/@teddyking/namespaces-in-go-basics-e3f0fc1ff69a)
+- [containers from scratch](https://medium.com/@ssttehrani/containers-from-scratch-with-golang-5276576f9909)
+- [Vessel - A simple container runtime](https://medium.com/swlh/build-containers-from-scratch-in-go-part-1-namespaces-c07d2291038b)
+- [Containers from scratch in Go](https://www.youtube.com/watch?v=8fi7uSYlOdc)
+- [Build your own container using less than 100 lines of Go](https://www.infoq.com/articles/build-a-container-golang/)
+- [ns-process - learning about linux namespaces](https://github.com/teddyking/ns-process)
